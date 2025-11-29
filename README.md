@@ -1,0 +1,2 @@
+# kronos.nvim
+Neovim Theme
