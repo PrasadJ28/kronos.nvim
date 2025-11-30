@@ -72,7 +72,7 @@ local palettes = {
 
      -- 5. New "Cyberpunk" Theme (Neon)
     sunset = {
-        bg = "#030f18", fg = "#00ff9f", -- Deep Purple BG, Neon Green Text
+        bg = "#190408", fg = "#00ff9f", -- Deep Purple BG, Neon Green Text
         color0 = "#670067", -- Deep Purple Grey
         color1 = "#ff0055", -- Neon Red
         color2 = "#00ff9f", -- Neon Green
