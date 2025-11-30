@@ -8,14 +8,14 @@ local palettes = {
         color1 = "#FF746C", -- Red
         color2 = "#80EF80", -- Green
         color3 = "#FFA500", -- Yellow
-        color4 = "#C9A0DC", -- Purple
+        color4 = "#AA6AC8", -- Purple
         color5 = "#Fb6F92", -- Pink
         color6 = "#03A9F4", -- Blue
         color7 = "#E25303", -- Orange
         color8 = "#010508", -- bg_dark
         color9 = "#051520", -- bg_light
         color10 = "#333333", -- selection
-        color11 = "#81f4e1", --method
+        color11 = "#10BC9F", --method
         error = "#ff5555", warning = "#ffa500", info = "#8be9fd", hint = "#bd93f9",
     },
 
