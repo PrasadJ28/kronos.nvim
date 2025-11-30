@@ -36,7 +36,7 @@ local palettes = {
     },
 
     -- 3. New "Cyberpunk" Theme (Neon)
-    astal = {
+    prime = {
         bg = "#100412", fg = "#00ff9f", -- Deep Purple BG, Neon Green Text
         color0 = "#670067", -- Deep Purple Grey
         color1 = "#ff0055", -- Neon Red
@@ -53,7 +53,7 @@ local palettes = {
     },
 
      -- 3. New "Cyberpunk" Theme (Neon)
-    sea = {
+    aurora = {
         bg = "#030f18", fg = "#00ff9f", -- Deep Purple BG, Neon Green Text
         color0 = "#670067", -- Deep Purple Grey
         color1 = "#ff0055", -- Neon Red
@@ -73,9 +73,9 @@ local palettes = {
 function M.setup(opts)
     opts = opts or {}
     -- This line picks the palette based on what user put in setup()
-    M.palette = palettes[opts.theme] or palettes.dark
+    M.palette = palettes[opts.theme] or palettes.dusk
 end
 
-M.palette = palettes.dark
+M.palette = palettes.dusk
 
 return M
