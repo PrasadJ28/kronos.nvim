@@ -53,8 +53,25 @@ local palettes = {
         error = "#ff0055", warning = "#f6ff00", info = "#00ffff", hint = "#ff00ff",
     },
 
-     -- 3. New "Cyberpunk" Theme (Neon)
+     -- 4. New "Cyberpunk" Theme (Neon)
     aurora = {
+        bg = "#030f18", fg = "#00ff9f", -- Deep Purple BG, Neon Green Text
+        color0 = "#670067", -- Deep Purple Grey
+        color1 = "#ff0055", -- Neon Red
+        color2 = "#00ff9f", -- Neon Green
+        color3 = "#f6ff00", -- Neon Yellow
+        color4 = "#00f7ff", -- Neon Cyan/Blue
+        color5 = "#ff00ff", -- Neon Pink
+        color6 = "#00ffff", -- Cyan
+        color7 = "#ff9900", -- Neon Orange
+        color8 = "#050014",
+        color9 = "#19043d",
+        color10 = "#380b6e",
+        error = "#ff0055", warning = "#f6ff00", info = "#00ffff", hint = "#ff00ff",
+    },
+
+     -- 5. New "Cyberpunk" Theme (Neon)
+    sunset = {
         bg = "#030f18", fg = "#00ff9f", -- Deep Purple BG, Neon Green Text
         color0 = "#670067", -- Deep Purple Grey
         color1 = "#ff0055", -- Neon Red
