@@ -5,17 +5,18 @@ local palettes = {
     dusk = {
         bg = "#030f18", fg = "#ffffff",
         color0 = "#555555", -- Grey
-        color1 = "#ff5555", -- Red
+        color1 = "#e50002", -- Red
         color2 = "#50fa7b", -- Green
-        color3 = "#f1fa8c", -- Yellow
-        color4 = "#bd93f9", -- Blue
-        color5 = "#ff79c6", -- Purple
-        color6 = "#8be9fd", -- Cyan
+        color3 = "#ffa500", -- Yellow
+        color4 = "#c678dd", -- Purple
+        color5 = "#cc0271", -- Pink
+        color6 = "#82aaff", -- Blue
         color7 = "#E25303", -- Orange
         color8 = "#010508", -- bg_dark
         color9 = "#051520", -- bg_light
         color10 = "#333333", -- selection
-        error = "#ff5555", warning = "#f1fa8c", info = "#8be9fd", hint = "#bd93f9",
+        color11 = "#81f4e1", --method
+        error = "#ff5555", warning = "#ffa500", info = "#8be9fd", hint = "#bd93f9",
     },
 
     -- 2. New "Light" Theme
