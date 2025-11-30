@@ -1,6 +1,6 @@
 local M = {}
 
--- 1. Lualine Reloader
+-- 1. Lualine Reloader (Keep existing)
 function M.reload_lualine()
     if package.loaded["lualine"] == nil then return end
     package.loaded["lualine.themes.kronos"] = nil
@@ -12,18 +12,35 @@ function M.reload_lualine()
     end
 end
 
--- 2. The Internal Patch Logic (Hidden)
+-- 2. The Internal Patch Logic (UPDATED)
 local function apply_patch()
     local status_ok, defaults = pcall(require, "neo-tree.defaults")
     if not status_ok then return end
 
-    -- Define the Orange Icon Provider
+    -- Load web-devicons so we can calculate colors for files
+    local has_devicons, devicons = pcall(require, "nvim-web-devicons")
+
+    -- Define the Smart Icon Provider
     local icon_provider = function(icon, node, state)
+        -- A. Handle Directories (Force Orange from Theme)
         if node.type == "directory" then
             return {
                 text = icon,
                 highlight = "NeoTreeDirectoryIcon",
             }
+        end
+
+        -- B. Handle Files (Restore original DevIcon colors)
+        if has_devicons then
+            local name = node.name
+            local ext = node.ext
+            local i, hl = devicons.get_icon(name, ext)
+            if i then
+                return {
+                    text = i,
+                    highlight = hl -- Uses "DevIconGo", "DevIconDockerfile", etc.
+                }
+            end
         end
     end
 
@@ -46,11 +63,11 @@ local function apply_patch()
     set_hl("folder_open")
     set_hl("folder_empty")
 
-    -- Disable Git colors on names
+    -- Disable Git colors on names (Keep them Blue)
     defaults.default_component_configs.name.use_git_status_colors = false
 end
 
--- 3. The Public Hook (Run this in init.lua)
+-- 3. The Public Hook (Keep existing)
 function M.hook_neotree()
     -- Case A: Neo-tree is already running (e.g. reload)
     if package.loaded["neo-tree"] then
