@@ -5,7 +5,7 @@ local palettes = {
     dusk = {
         bg = "#030f18", fg = "#ffffff",
         color0 = "#555555", -- Grey
-        color1 = "#FF3D33", -- Red
+        color1 = "#FF554D", -- Red
         color2 = "#80EF80", -- Green
         color3 = "#FFA500", -- Yellow
         color4 = "#AA6AC8", -- Purple
