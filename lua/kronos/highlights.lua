@@ -12,7 +12,7 @@ function M.setup()
     set(0, "Normal", { fg = c.fg, bg = c.bg })
     set(0, "SignColumn", { bg = "NONE" })
     set(0, "CursorLine", { bg = "#111111" })
-    set(0, "LineNr", { fg = c.color0 })
+    set(0, "LineNr", { fg = c.color10 })
     set(0, "CursorLineNr", { fg = c.color3, bold = true })
     set(0, "Visual", { bg = c.color10 })
     set(0, "Search", { fg = c.bg, bg = c.color3 })
@@ -71,8 +71,8 @@ function M.setup()
 
     -- 2. ENSURE PUNCTUATION IS SUBTLE
     -- This targets the "." in "M.setup"
-    set(0, "@punctuation.delimiter", { fg = c.color0 }) -- Grey dot
-    set(0, "@punctuation.bracket", { fg = c.color0 })   -- Grey ()
+    set(0, "@punctuation.delimiter", { fg = c.color6 }) -- Grey dot
+    set(0, "@punctuation.bracket", { fg = c.color6 })   -- Grey ()
     -- 3. FOLDER ICONS (Universal Support)
     -- Neo-tree
     set(0, "NeoTreeDirectoryIcon", { fg = c.color7 }) -- Orange
