@@ -1,7 +1,7 @@
 local M = {}
 
 M.config = {
-    theme = "dusk",
+    theme = "sunset",
 }
 
 function M.setup(opts)
